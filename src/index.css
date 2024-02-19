@@ -1,0 +1,196 @@
+body {
+  background: #131518;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 327px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+  border-radius: 15px;
+  background-image: radial-gradient(circle at 50% 0, #232a34, #181e27 90%);
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.oval {
+  width: 40px;
+  height: 40px;
+  background-color: #262e38;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 24px;
+}
+
+h1 {
+  margin: 16px 24px;
+  color: #fff;
+  font-size: 24px;
+}
+
+p {
+  margin: 10px 24px;
+  font-size: 14px;
+  color: #969fad;
+  text-align: left;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  padding: 24px 24px;
+}
+.rateButton {
+  border: none;
+  color: #7c8798;
+  width: 42px;
+  height: 42px;
+  background-color: #262e38;
+  border-radius: 50%;
+}
+
+.submit-button {
+  width: 279px;
+  font-size: 14px;
+  border: none;
+  margin: 24px 24px;
+  border-radius: 22.5px;
+  background-color: #fc7614;
+  color: #fff;
+  height: 45px;
+}
+
+.rateButton:hover {
+  cursor: pointer;
+  background-color: #7c8798;
+  color: #fff;
+}
+span {
+  color: #fff;
+}
+.rateButton.active {
+  background-color: #fc7614;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background-color: #fff;
+  color: #fc7614;
+  cursor: pointer;
+}
+
+.responce {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.selected {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #262e38;
+  width: 168px;
+  height: 32px;
+  margin-top: 24px;
+  border-radius: 22.5px;
+}
+.selected span {
+  font-size: 14px;
+  color: #fc7614;
+}
+
+.responce h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.responce p {
+  width: 279px;
+  height: 66px;
+  color: #969fad;
+  font-size: 14px;
+  text-align: center;
+}
+.error {
+  display: flex;
+  margin-left: 80px;
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 412px;
+    height: 430px;
+    border-radius: 30px;
+  }
+  .oval {
+    width: 48px;
+    height: 48px;
+    margin: 32px 32px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0px 32px;
+  }
+  p {
+    margin-left: 32px;
+    font-size: 15px;
+    width: 340px;
+    height: 72px;
+  }
+  .rateButton {
+    font-size: 16px;
+    width: 51px;
+    height: 51px;
+  }
+  .rate {
+    padding: 0px 32px;
+  }
+  .submit-button {
+    width: 341px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .error {
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+  .selected {
+    width: 193px;
+    height: 32px;
+  }
+  .selected span {
+    font-size: 15px;
+  }
+  .responce h2 {
+    font-size: 28px;
+  }
+  .responce p {
+    font-size: 15px;
+  }
+  .responce img {
+    margin-top: 20px;
+  }
+}
